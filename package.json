@@ -1,7 +1,12 @@
 {
-	"name": "tailwind-app",
+	"name": "ectoplate",
 	"version": "0.1.0",
 	"private": true,
+	"author": {
+		"url": "https://x.com/evvvrado",
+		"email": "everaldocrj@gmail.com",
+		"name": "Everaldo Júnior"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -36,7 +41,8 @@
 		"eslint-plugin-no-comments": "^1.1.10",
 		"eslint-plugin-prettier": "^5.0.0",
 		"husky": "^8.0.3",
-		"prettier": "^3.0.1"
+		"prettier": "^3.0.1",
+		"prettier-plugin-tailwindcss": "^0.5.4"
 	},
 	"eslintConfig": {
 		"eslintConfig": {
