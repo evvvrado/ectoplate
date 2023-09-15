@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 const z_indexes = ["modals", "header", "element", "content"];
 
 type zIndexes = (typeof z_indexes)[number];
@@ -9,5 +11,5 @@ export const z = (name: zIndexes) => {
 };
 
 export const cn = (...classNames: (string | undefined)[]) => {
-	return classNames.filter(Boolean).join(" ");
+	return twMerge(...classNames);
 };
