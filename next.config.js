@@ -8,9 +8,6 @@ const nextConfig = {
 	},
 
 	compress: true,
-	compiler: {
-		styledComponents: true,
-	},
 
 	async headers() {
 		const securityHeaders = [
