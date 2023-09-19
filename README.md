@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="cover.png" width="1200">
+</p>
+
 ### 🦠 ECTOPLATE 2023
 
 > Yuuuuuck !
 
-Beware, this Next.js boilerplate repository is not for the faint of heart. With its ghostly combination of Next, React, TypeScript, Tailwind, Framer Motion, Radix, Eslint, Prettier, Husky, and Commitlint, you'll be able to build a web project that's both frighteningly fast and stylishly spooky.
+Beware, this Next.js boilerplate repository is not for the faint of heart. With its ghostly combination of Next, React, TypeScript, Tailwind, Framer Motion, Eslint, Prettier, Husky, and Commitlint, you'll be able to build a web project that's both frighteningly fast and stylishly spooky.
 
 ## What is inside?
 
