@@ -40,9 +40,10 @@ const config: Config = {
 			],
 		},
 
-		fontSize: {},
-		lineHeight: {},
-		extend: {},
+		extend: {
+			fontSize: {},
+			lineHeight: {},
+		},
 	},
 
 	plugins: [
