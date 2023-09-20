@@ -6,7 +6,7 @@
 
 > Yuuuuuck !
 
-Beware, this Next.js boilerplate repository is not for the faint of heart. With its ghostly combination of Next, React, TypeScript, Tailwind, Framer Motion, Eslint, Prettier, Husky, and Commitlint, you'll be able to build a web project that's both frighteningly fast and stylishly spooky.
+Beware, this Next.js boilerplate repository is not for the faint of heart. With its ghostly combination of Next, React, TypeScript, Jack-O'-Hook, Tailwind, Framer Motion, Eslint, Prettier, Husky, and Commitlint, you'll be able to build a web project that's both frighteningly fast and stylishly spooky.
 
 ## What is inside?
 
@@ -40,13 +40,13 @@ To install this project, follow these steps:
 3. Install the dependencies:
 
 ```
-- bun install
+- yarn install
 ```
 
 4. Start the development server:
 
 ```
-- bun dev
+- yarn dev
 ```
 
 <br>
