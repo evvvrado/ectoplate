@@ -1,8 +1,9 @@
 import "@/styles/css/globals.css";
+
 import type { Metadata } from "next";
 
-import { inter } from "@/styles/fonts";
 import definition from "@/constants/definition";
+import { inter } from "@/styles/fonts";
 
 export const metadata: Metadata = {
 	title: {
