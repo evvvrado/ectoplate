@@ -1,4 +1,5 @@
 import "@/styles/css/globals.css";
+
 import type { Metadata, Viewport } from "next";
 
 import definition from "@/constants/definition";
