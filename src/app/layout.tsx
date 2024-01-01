@@ -1,6 +1,5 @@
 import "@/styles/css/globals.css";
-
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import definition from "@/constants/definition";
 import { inter } from "@/styles/fonts";
@@ -90,16 +89,17 @@ export const metadata: Metadata = {
 			name: "Everaldo Júnior",
 			url: "https://twitter.com/evvvrado",
 		},
-		{
-			name: "Insany Design",
-			url: "https://insany.design",
-		},
 	],
 
+	appleWebApp: true,
+};
+
+export const viewport: Viewport = {
 	themeColor: definition.theme,
 	colorScheme: "normal",
-	viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
-	appleWebApp: true,
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 1,
 };
 
 export default function RootLayout({

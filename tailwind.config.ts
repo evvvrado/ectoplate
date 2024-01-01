@@ -1,30 +1,42 @@
 import type { Config } from "tailwindcss";
 import { PluginAPI } from "tailwindcss/types/config";
 
+export const colors = {
+	black: "#000",
+	white: "#fff",
+	primary: "#ff0ef0",
+};
+
 const config: Config = {
 	content: ["./src/**/*.tsx"],
 
 	theme: {
 		screens: {
-			es_phone: "320px",
-			sm_phone: "390px",
-			md_phone: "475px",
-			lg_phone: "600px",
-			sm_tablet: "768px",
-			md_tablet: "990px",
-			lg_tablet: "1050px",
-			es_desktop: "1280px",
-			sm_desktop: "1366px",
-			md_desktop: "1440px",
-			lg_desktop: "1920px",
+			lg_desktop: { max: "1920px" },
+			md_desktop: { max: "1440px" },
+			sm_desktop: { max: "1366px" },
+			es_desktop: { max: "1280px" },
+
+			lg_tablet: { max: "1050px" },
+			md_tablet: { max: "990px" },
+			sm_tablet: { max: "730px" },
+			es_tablet: { max: "600px" },
+
+			lg_phone: { max: "490px" },
+			md_phone: { max: "414px" },
+			sm_phone: { max: "360px" },
+			es_phone: { max: "320px" },
 		},
 
-		colors: {
-			black: "#000",
-			white: "#fff",
-
-			primary: "#f00",
+		zIndex: {
+			content: "0",
+			elements: "1",
+			header: "2",
+			modal: "3",
+			ovni: "999",
 		},
+
+		colors: colors,
 
 		fontFamily: {
 			sans: [
@@ -56,6 +68,10 @@ const config: Config = {
 
 				".frame": {
 					"@apply h-full w-full object-cover": {},
+				},
+
+				".center": {
+					"@apply grid place-items-center": {},
 				},
 			});
 		},
