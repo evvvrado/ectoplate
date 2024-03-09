@@ -36,7 +36,7 @@ const config: Config = {
 			ovni: "999",
 		},
 
-		colors: colors,
+		colors,
 
 		fontFamily: {
 			sans: [
@@ -53,8 +53,10 @@ const config: Config = {
 		},
 
 		extend: {
+			keyframes: {},
 			fontSize: {},
 			lineHeight: {},
+			animation: {},
 		},
 	},
 

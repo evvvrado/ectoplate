@@ -5,10 +5,7 @@ module.exports = {
 	trimTrailingWhitespace: true,
 	insertFinalNewline: true,
 	singleQuote: false,
-	plugins: [
-		"prettier-plugin-tailwindcss",
-		"@ianvs/prettier-plugin-sort-imports",
-	],
+	plugins: ["prettier-plugin-tailwindcss"],
 	importOrder: [
 		"^react$",
 		"",
