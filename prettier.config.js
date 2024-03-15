@@ -6,8 +6,8 @@ module.exports = {
 	insertFinalNewline: true,
 	singleQuote: false,
 	plugins: [
-		"prettier-plugin-tailwindcss",
 		"@ianvs/prettier-plugin-sort-imports",
+		"prettier-plugin-tailwindcss",
 	],
 	importOrder: [
 		"^react$",
