@@ -1,10 +1,17 @@
 import type { Config } from "tailwindcss";
+import { blue, green, rose, slate, yellow } from "tailwindcss/colors";
 import { PluginAPI } from "tailwindcss/types/config";
 
 export const colors = {
 	black: "#000",
 	white: "#fff",
 	primary: "#ff0ef0",
+
+	danger: rose,
+	succes: green,
+	alert: yellow,
+	info: blue,
+	gray: slate,
 };
 
 const config: Config = {

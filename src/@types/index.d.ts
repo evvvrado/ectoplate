@@ -1,4 +1,9 @@
-type SeoType = {
-	title: string;
-	description?: string;
+declare global {
+	interface Window {
+		gtag: (...args: unknown[]) => void;
+	}
+}
+
+type PageProps = {
+	params: { locale: Locale };
 };
