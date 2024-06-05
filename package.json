@@ -17,12 +17,8 @@
 		"commit": "cz"
 	},
 	"dependencies": {
-		"@types/node": "20.14.1",
-		"@types/react": "18.3.3",
-		"@types/react-dom": "18.3.0",
-		"autoprefixer": "10.4.19",
 		"framer-motion": "^11.2.10",
-		"jack-o-hook": "^1.0.9",
+		"jack-o-hook": "^1.1.2",
 		"next": "14.2.3",
 		"postcss": "8.4.38",
 		"react": "18.3.1",
@@ -40,6 +36,10 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@ianvs/prettier-plugin-sort-imports": "^4.2.1",
 		"@typescript-eslint/eslint-plugin": "^7.12.0",
+		"@types/node": "20.14.1",
+		"@types/react": "18.3.3",
+		"@types/react-dom": "18.3.0",
+		"autoprefixer": "10.4.19",
 		"commitizen": "^4.3.0",
 		"eslint": "8.57.0",
 		"eslint-config-next": "14.2.3",
@@ -52,8 +52,87 @@
 		"prettier-plugin-tailwindcss": "^0.6.1"
 	},
 	"eslintConfig": {
-		"eslintConfig": {
-			"extends": "./.eslintrc.json"
+		"env": {
+			"browser": true,
+			"es2021": true
+		},
+		"extends": [
+			"next",
+			"eslint:recommended",
+			"plugin:react/recommended",
+			"plugin:@typescript-eslint/recommended",
+			"next/core-web-vitals",
+			"plugin:@typescript-eslint/eslint-recommended",
+			"plugin:prettier/recommended",
+			"plugin:@next/next/recommended",
+			"plugin:tailwindcss/recommended"
+		],
+		"overrides": [],
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"plugins": [
+			"react",
+			"@typescript-eslint",
+			"no-comments"
+		],
+		"rules": {
+			"react/react-in-jsx-scope": "off",
+			"no-comments/disallowComments": [
+				"error",
+				{
+					"allow": [
+						"TODO",
+						"FIXME",
+						"NOTE",
+						"DEBUG"
+					]
+				}
+			]
+		},
+		"ignorePatterns": [
+			".circleci/",
+			".docker/",
+			".github/",
+			".husky/",
+			".vscode/",
+			".next/",
+			"coverage/",
+			"yarn.lock",
+			"node_modules/",
+			"next.config.js",
+			"src/generated/"
+		]
+	},
+	"prettier": {
+		"tabWidth": 4,
+		"endOfLine": "auto",
+		"charset": "utf-8",
+		"trimTrailingWhitespace": true,
+		"insertFinalNewline": true,
+		"singleQuote": false,
+		"plugins": [
+			"@ianvs/prettier-plugin-sort-imports",
+			"prettier-plugin-tailwindcss"
+		],
+		"importOrder": [
+			"^react$",
+			"",
+			"^next$",
+			"^next/(.*)$",
+			"",
+			"^(@)(/.*)$",
+			"",
+			"<THIRD_PARTY_MODULES>",
+			"",
+			"^[.]"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn lint"
 		}
 	},
 	"config": {

@@ -2,26 +2,26 @@ import "@/styles/css/globals.css";
 
 import type { Metadata, Viewport } from "next";
 
-import definition from "@/constants/definition";
+import { DEFINITION } from "@/constants";
 import { inter } from "@/styles/fonts";
 
 export const metadata: Metadata = {
 	title: {
-		default: definition.title,
-		template: `%s ${definition.resumeTitle}`,
+		default: DEFINITION.title,
+		template: `%s ${DEFINITION.resumeTitle}`,
 	},
 
-	description: definition.description,
+	description: DEFINITION.description,
 	robots: "/robots.txt",
 
 	openGraph: {
 		type: "website",
-		title: `Acessar ${definition.title}`,
-		description: definition.description,
-		siteName: definition.name,
+		title: `Acessar ${DEFINITION.title}`,
+		description: DEFINITION.description,
+		siteName: DEFINITION.name,
 		locale: "pt_BR",
 		alternateLocale: "en_US",
-		url: definition.url,
+		url: DEFINITION.url,
 		countryName: "Brasil",
 
 		images: [
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
 	},
 
 	twitter: {
-		title: `Acessar ${definition.title}`,
-		description: definition.description,
+		title: `Acessar ${DEFINITION.title}`,
+		description: DEFINITION.description,
 		card: "summary_large_image",
 		creator: "@evvvrado",
 
@@ -96,11 +96,11 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-	themeColor: definition.theme,
+	themeColor: DEFINITION.theme,
 	colorScheme: "normal",
 	width: "device-width",
 	initialScale: 1,
-	maximumScale: 1,
+	maximumScale: 5,
 };
 
 export default function RootLayout({

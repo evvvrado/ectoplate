@@ -2448,10 +2448,10 @@ iterator.prototype@^1.1.2:
     reflect.getprototypeof "^1.0.4"
     set-function-name "^2.0.1"
 
-jack-o-hook@^1.0.9:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/jack-o-hook/-/jack-o-hook-1.1.1.tgz#bdd01f4d9468776e4bf48b116509ba78738dc1e3"
-  integrity sha512-vDYj+tR7cY5a6h6wo0Ymg1c7y8oXkv3ulESleI7zSGSHIr8sdzsGdeZwupg+qJmUUdmN9d21AOkQqzzYk3/Q9A==
+jack-o-hook@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/jack-o-hook/-/jack-o-hook-1.1.2.tgz#6205a670fe479f719a01afb9de09874c1229fc08"
+  integrity sha512-91J3c881/iOIar+j64d4QUBgQv6EuTR5yHdw8kngsri90TqYMuwNEvO+gy4bBTwepp0MR/cb9j7lJ5CvP6SWyg==
 
 jackspeak@^2.3.5:
   version "2.3.6"

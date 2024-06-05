@@ -21,6 +21,7 @@
 		],
 		"paths": {
 			"@/*": ["./src/*"],
+			"@/api/*": ["./src/app/api/*"],
 			"@/styles/*": ["./src/app/styles/*"]
 		}
 	},
