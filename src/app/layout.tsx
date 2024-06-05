@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 
 		images: [
 			{
-				url: "/cover.jpg",
-				secureUrl: "/cover.jpg",
+				url: "/covers/default.jpg",
+				secureUrl: "/covers/default.jpg",
 				alt: "Open Graph Visual Image",
 				type: "jpg",
 			},
 			{
-				url: "/cover.png",
-				secureUrl: "/cover.png",
+				url: "/covers/default.png",
+				secureUrl: "/covers/default.png",
 				alt: "Open Graph Visual Image",
 				type: "png",
 			},
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
 
 		images: [
 			{
-				url: "/cover.jpg",
-				secureUrl: "/cover.jpg",
+				url: "/covers/default.jpg",
+				secureUrl: "/covers/default.jpg",
 				alt: "Open Graph Visual Image",
 				type: "jpg",
 			},
 			{
-				url: "/cover.png",
-				secureUrl: "/cover.png",
+				url: "/covers/default.png",
+				secureUrl: "/covers/default.png",
 				alt: "Open Graph Visual Image",
 				type: "png",
 			},

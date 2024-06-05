@@ -2,6 +2,10 @@ const routes = {
 	home: {
 		path: "/",
 	},
+
+	api: {
+		ping: "/ping",
+	},
 };
 
 export const authRoutes = [];

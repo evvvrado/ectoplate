@@ -1,9 +1,6 @@
 export const IS_DEV = process.env.NODE_ENV === "development";
 export const IS_PROD = process.env.NODE_ENV === "production";
 
-export const IS_CLIENT = typeof document !== "undefined";
-export const IS_SERVER = !IS_CLIENT;
-
 if (typeof process.env.NEXT_PUBLIC_SITE_URL !== "string") {
 	throw new Error(
 		`Please set the NEXT_PUBLIC_SITE_URL environment variable to your site's URL.
@@ -28,3 +25,6 @@ export const DEFINITION = {
 	url: SITE_URL || "http://localhost:3000",
 	theme: "#000",
 };
+
+export const IS_CLIENT = typeof document !== "undefined";
+export const IS_SERVER = !IS_CLIENT;
