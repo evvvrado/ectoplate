@@ -70,7 +70,7 @@ const validators: Record<string, (value: string) => boolean | string> = {
 			"Enter a valid date."
 		);
 	},
-	select: (value: string) => !!value,
+	select: (value: string) => !!value && value != "-1",
 	phone: (value: string) =>
 		regexPatterns.phone.test(value) || "Enter a valid phone number.",
 	cpf: (value: string) =>
