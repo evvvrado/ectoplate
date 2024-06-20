@@ -1,3 +1,6 @@
+/* eslint-disable no-comments/disallowComments */
+import MillionLint from "@million/lint";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: false,
@@ -65,4 +68,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+export default MillionLint.next({ rsc: true })(nextConfig);
